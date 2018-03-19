@@ -35,7 +35,7 @@ export default class App extends React.Component {
     };
   }
   componentWillMount() {
-    this.setState({ islogged: true });
+    this.setState({ islogged: false });
     fetch(url + "Store/")
       .then(response => response.json())
       .then(response => {
